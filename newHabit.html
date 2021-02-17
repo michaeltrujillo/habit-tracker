@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>habit tracker - create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Habit Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">habits</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+
+
+        <form id="newForm">
+            <div class="mb-3">
+                <label for="habitName" class="form-label">What are you calling this habit?</label>
+                <input type="text" class="form-control" id="habitName" aria-describedby="emailHelp">
+                <br>
+                <label for="habitDescription" class="form-label">describe it</label>
+                <br>
+                <textarea id="habitDescription" name="w3review" rows="4" cols="50"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="totalDays" class="form-label">How many days will you do this for?</label>
+                <input type="number" class="form-control" id="totalDays">
+            </div>
+            <div class="mb-3">
+                <label for="weekDays" class="form-label">Select the days you wish to do this.</label>
+                <br>
+                <input type="checkbox"> su
+                <br>
+                <input type="checkbox"> mo
+                <br>
+                <input type="checkbox"> tu
+                <br>
+                <input type="checkbox"> we
+                <br>
+                <input type="checkbox"> th
+                <br>
+                <input type="checkbox"> fr
+                <br>
+                <input type="checkbox"> sa
+                <br>
+
+
+            </div>
+
+            <div class="mb-3">
+                <label for="totalDays" class="form-label">When will you begin?</label>
+                <input type="date" class="form-control" id="totalDays">
+            </div>
+
+            <div class="mb-3">
+                <label for="totalDays" class="form-label">When will you end? or is it ongoing?</label>
+                <input type="date" class="form-control" id="totalDays">
+            </div>
+
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Create the habbit</button>
+    </form>
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

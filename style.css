@@ -1,0 +1,89 @@
+/* ALL */
+
+button{
+    margin: 10px;
+}
+
+img{
+    margin: 20px;
+}
+
+
+
+
+/* index.html */
+
+#calendar{
+    margin: 20px;
+    border: solid black 3px;
+    border-radius: 25px;
+    float: left;
+}
+
+#viewBy{
+    margin: 10px;
+    text-align: center;
+}
+
+#todaysObj{
+    border: solid red 4px;
+    border-radius: 25px;
+   float:left;
+   padding:20px;
+    margin:20px;
+}
+
+#statusBtns{
+    margin: 20px;
+    border: solid black 3px;
+    border-radius: 25px;
+    float: right;
+}
+
+
+
+
+/* newhabit.html */
+
+#newForm{
+    margin: 20px;
+}
+
+
+
+
+/* currentgoals.html */
+
+#activeItems{
+    margin: 20px;
+    border: blue solid 2px;
+}
+
+#inactiveItems{
+    margin: 20px;
+    border: green solid 2px;
+}
+
+
+
+
+/* habitexample.html */
+
+#example{
+    text-align: center;
+    margin: 20px;
+}
+
+#example #remainingDays{
+    color: red;
+}
+
+#example #notes{
+    text-align:left;
+    margin: 30px;
+    border: red solid 2px;
+}
+
+/* specificDay.html */
+
+
