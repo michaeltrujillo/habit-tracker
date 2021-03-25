@@ -50,9 +50,12 @@ function Navbar() {
             {/* <Link to="/lists">
               <li className="nav-item nav-link" id="link">My Lists</li>
             </Link> */}
-            {/* <Link to="/createlist">
-              <li className="nav-item nav-link" id="link" >Create New List</li>
-            </Link> */}
+            <Link to="/createhabit">
+              <li className="nav-item nav-link" id="link" >Create Habit</li>
+            </Link>
+            <Link to="/habits">
+              <li className="nav-item nav-link" id="link" >Habits</li>
+            </Link>
           </ul>
           <ul className="navbar-nav">
             <Link to="/">

@@ -64,6 +64,22 @@ router.get(
     }
 );
 
+router.get(
+  "/userHabits",
+  passport.authenticate("jwt", { session: false }),
+  function (req, res) {
+    User.findById({ _id: req.user._id })
+      .populate("habits")
+      .exec((err, document) => {
+        if (err) {
+          res.json({ message: "Error has occurred", error: true });
+        } else {
+          res.json({ habits: document.habits, authenticated: true });
+        }
+      });
+  }
+);
+
 router.use("*", function (req, res) {
     res.sendFile(path.join(__dirname, "../../client/build/index.html"));
 });
