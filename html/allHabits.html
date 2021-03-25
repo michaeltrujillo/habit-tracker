@@ -13,18 +13,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Habit Tracker</a>
+            <a class="navbar-brand" href="index.html" style="color: red;"><strong><i>Habit Tracker</i></strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="allHabits.html">habits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">habits</a>
+                        <a class="nav-link" href="newHabit.html">create new habit</a>
                     </li>
                 </ul>
             </div>
@@ -32,21 +35,28 @@
     </nav>
     <div class="container-fluid">
 
-        <h2>Current habits</h2>
+        <br>
+        
+        <h2><strong>Current habits:</strong></h2>
 
-        <div id="activeItems">
+        <div id="active-Items">
             <ul class="list-group">
                 <li class="list-group-item">running</li>
                 <li class="list-group-item">brush my teeth everynight</li>
                 <li class="list-group-item">call grandma before bed</li>
             </ul>
         </div>
-        <br><br>
-        <h2>Completed habits</h2>
-        <div id="inactiveItems">
-            <li class="list-group-item">study every day before final</li>
-            <li class="list-group-item">read a chapter of "The great treasure hunt"</li>
 
+        <br><br>
+
+        <h2><strong>Completed habits:</strong></h2>
+
+        <div id="inactive-Items">
+            <ul class="list-group">
+                <li class="list-group-item">40 day vegetarian</li>
+                <li class="list-group-item">read 2 chapters a night</li>
+                <li class="list-group-item">walk neighbors dog while they're out of town</li>
+            </ul>
         </div>
 
 

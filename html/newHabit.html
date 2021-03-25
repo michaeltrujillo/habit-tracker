@@ -13,18 +13,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Habit Tracker</a>
+            <a class="navbar-brand" href="index.html" style="color: red;"><strong><i>Habit Tracker</i></strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="allHabits.html">habits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">habits</a>
+                        <a class="nav-link" href="newHabit.html">create new habit</a>
                     </li>
                 </ul>
             </div>
@@ -32,22 +35,23 @@
     </nav>
     <div class="container-fluid">
 
+            <h1 id="new-habit-title"><strong><u>Create a New Habit!</u></strong></h1>
 
         <form id="newForm">
             <div class="mb-3">
-                <label for="habitName" class="form-label">What are you calling this habit?</label>
+                <label for="habitName" class="form-label"><strong>What are you calling this habit?</strong></label>
                 <input type="text" class="form-control" id="habitName" aria-describedby="emailHelp">
                 <br>
-                <label for="habitDescription" class="form-label">describe it</label>
+                <label for="habitDescription" class="form-label"><strong>Additional details</strong></label>
                 <br>
                 <textarea id="habitDescription" name="w3review" rows="4" cols="50"></textarea>
             </div>
             <div class="mb-3">
-                <label for="totalDays" class="form-label">How many days will you do this for?</label>
+                <label for="totalDays" class="form-label"><strong>How many days will you do this for?</strong></label>
                 <input type="number" class="form-control" id="totalDays">
             </div>
             <div class="mb-3">
-                <label for="weekDays" class="form-label">Select the days you wish to do this.</label>
+                <label for="weekDays" class="form-label"><strong>Select the days you wish to do this.</strong></label>
                 <br>
                 <input type="checkbox"> su
                 <br>
@@ -68,21 +72,22 @@
             </div>
 
             <div class="mb-3">
-                <label for="totalDays" class="form-label">When will you begin?</label>
+                <label for="totalDays" class="form-label"><strong>When will you begin?</strong></label>
                 <input type="date" class="form-control" id="totalDays">
             </div>
 
             <div class="mb-3">
-                <label for="totalDays" class="form-label">When will you end? or is it ongoing?</label>
+                <label for="totalDays" class="form-label"><strong>When will you end? or is it ongoing?</strong></label>
                 <input type="date" class="form-control" id="totalDays">
             </div>
 
+            <button type="submit" class="btn btn-primary"><strong>Create the habbit</strong></button>
+        </form>
     </div>
 
 
 
-    <button type="submit" class="btn btn-primary">Create the habbit</button>
-    </form>
+
 
 
 
