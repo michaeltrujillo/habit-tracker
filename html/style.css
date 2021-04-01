@@ -127,18 +127,96 @@ nav{
 #example{
     text-align: center;
     margin: 20px;
+    height: 100vh;
+}
+
+#example h1{
+    font-size: 55px;
+    font-weight: bold;
+    margin: 25px;
+}
+#example button{
+    box-shadow: 5px 10px 8px #888888;
 }
 
 #example #remainingDays{
     color: red;
 }
 
-#example #notes{
+#remainingDaysLabel{
+   font-weight: bold;
+}
+
+#example .notes{
     text-align:left;
     margin: 30px;
     border: red solid 2px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: rgba(245, 245, 220, 0.3);
+    box-shadow: 5px 10px 8px #888888;
 }
+
+#notesHeader{
+    font-weight: bold;
+}
+
 
 /* specificDay.html */
 
+#date-title{
+    text-align: center;
+    margin: 25px;
+    font-size: 55px;
+    border: 4px solid black;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+}
 
+#specific-date{
+    color: rgba(23, 23, 179, 0.699);
+}
+
+#dynamic-item{
+    background-color: rgba(255, 0, 0, 0.09);
+    height: 60vh;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#dynamic-notes{
+    background-color: rgba(255, 255, 0, 0.09);
+    height: 60vh;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.list-heads{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.edit{
+    display: block;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    box-shadow: 5px 10px 8px #888888;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(23, 23, 179, 0.5);
+}

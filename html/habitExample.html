@@ -36,21 +36,32 @@
     <div class="container-fluid" id="example">
 
         <h1>Habit Name</h1>
-        <button type="button" class="btn btn-secondary">Update Habit</button>
 
-        <br><br>
-        <h3>habit description</h3>
+        <h2 id="remainingDaysLabel">Days remaining: <span id="remainingDays">xxx</span> </h2>
+
         <br>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique in ipsa sed sint atque quaerat
-            repellendus veniam dolor voluptas at voluptatum pariatur iusto, reprehenderit dignissimos dolorum a
+
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique in ipsa sed sint atque
+            quaerat
+            repellendus veniam dolor voluptas at voluptatum pariatur iusto, reprehenderit dignissimos
+            dolorum a
             praesentium harum porro!</h5>
 
+        <div class="container">
+            <div class="row">
+                <div class="col"><button type="button" class="btn btn-secondary">Update Habit</button></div>
+                <div class="col"><button type="button" class="btn btn-success">Submit changes</button></div>
+            </div>
+        </div>
+
+
+
         <br>
-        <h2>Days remaining: <span id="remainingDays">xxx</span> </h2>
 
-        <div id="notes">
-            <h4>Notes:</h4>
 
+        <h2 id="notesHeader">Notes:</h2>
+
+        <div class="notes">
             <ul id="noteList">
                 <li>
                     <h6>date:2/12</h6>
@@ -58,12 +69,6 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="btn btn-success">Submit changes</button>
-
-    </div>
-
-
-
 
 </body>
 

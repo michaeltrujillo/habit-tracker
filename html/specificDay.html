@@ -37,26 +37,37 @@
 
 
 
-        <h1>DATE: 4/10</h1>
+        <h1 id="date-title"><u><strong>Date Selected:</strong></u> <span id="specific-date">4/10</span></h1>
 
-        <div id="items">
-            <h4>Items for this day:</h4>
-            <ul>
-                <li>run</li>
-                <li>call grandma</li>
-                <li>read</li>
-            </ul>
+        <div class="row">
+
+            <div class="col">
+
+                <div id="dynamic-item">
+                    <h4 class="list-heads">Items for this day:</h4>
+                    <ol id="dynamic-item-list">
+                        <li>run</li>
+                        <li>call grandma</li>
+                        <li>read</li>
+                    </ol>
+                </div>
+                <button type="button" class="btn btn-secondary edit">Edit Items</button>
+            </div>
+
+            <div class="col">
+
+                <div id="dynamic-notes">
+                    <h4 class="list-heads">Notes:</h4>
+                    <ol id="dynamic-notes-list">
+                        <li>sprained my ankle can't run for the next few days</li>
+                        <li>grandma didn't pick up</li>
+                        <li>read an extra chapter because i was bored</li>
+                    </ol>
+                </div>
+                <button type="button" class="btn btn-secondary edit">Edit Notes</button>
+            </div>
 
         </div>
-
-        <div id="notes">
-            <h4>Notes:</h4>
-            <li>sprained my ankle can't run for the next few days</li>
-            <li>grandma didn't pick up</li>
-            <li>read an extra chapter because i was bored</li>
-        </div>
-
-
     </div>
 
 
