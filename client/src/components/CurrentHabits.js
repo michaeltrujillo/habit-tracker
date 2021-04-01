@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CurrentHabits(props) {
 
@@ -7,7 +8,9 @@ function CurrentHabits(props) {
         <h1>Current Habits</h1>
         <ul className="list-group">
             {props.habits.map((habit) => (
-                <li className="list-group-item" key={habit._id}>{habit.name}</li>
+                <Link to={`/habit/${habit._id}`} style={{color: "black"}} key={habit._id}>
+                  <li className="list-group-item" >{habit.name}</li>
+                </Link>
             ))}
         </ul>
         

@@ -28,14 +28,14 @@ function CreateHabit(props) {
     }
 
     function handleBeginDateInputChange(e) {
-        let beginDateString = e.target.value;
-        let beginDateObject = new Date(beginDateString);
+        let beginDateString = e.target.value.split('-');
+        let beginDateObject = new Date(beginDateString[0], beginDateString[1] - 1, beginDateString[2]); 
         setBeginDate({[e.target.name]: beginDateObject});
     }
 
     function handleEndDateInputChange(e) {
-        let endDateString = e.target.value;
-        let endDateObject = new Date(endDateString);
+        let endDateString = e.target.value.split('-');
+        let endDateObject = new Date(endDateString[0], endDateString[1] - 1, endDateString[2]); 
         setEndDate({[e.target.name]: endDateObject});
     }
 
