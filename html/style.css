@@ -43,37 +43,62 @@ nav{
     background-color: rgba(240, 255, 240, 0.418);
 
 }
-#calendar-div{
-    background-color: white;
-    margin: 20px;
+
+#weekDayContainer{
+    background-color: rgba(226, 150, 115, 0.2);
+    display: block;
+    margin: auto;
     border: solid black 3px;
     border-radius: 25px;
     box-shadow: 5px 10px 8px #888888;
-}
-
-#viewBy{
-    margin: 10px;
+    padding: 12px;
     text-align: center;
 }
+.dayName{
+font-weight: bold;
+text-decoration: underline;
+font-size: 25px;
+}
+
+#calendar-div{
+    background-color: rgba(245, 245, 220, 0.4);
+    display: block;
+    margin: 12px;
+    border: solid black 3px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+    padding: 12px;
+    text-align: center;
+}
+
+/* #viewBy{
+    margin: 10px;
+    text-align: center;
+} */
 
 #todaysObj{
     background-color: white;
     border: solid rgba(255, 0, 0, 0.322) 4px;
     border-radius: 25px;
-   padding:20px;
+    padding:20px;
     margin:20px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #888888;  
 }
 
-#statusBtns{
-    background-color: white;
-    padding: 4px;
-    margin: 20px;
-    border: solid black 3px;
+#playerStats{
+    border: 3px solid beige;
     border-radius: 25px;
-    box-shadow: 5px 10px 8px #888888;
+    display: block;
+    margin:auto;
+    padding: 25px;
+    box-shadow: 5px 10px 8px #888888;  
+    background-color: rgba(255, 192, 203, 0.295);
 }
 
+#playerStats h3{
+    text-align: center;
+    font-weight: bold;
+}
 
 
 
@@ -155,11 +180,37 @@ nav{
     padding: 25px;
     background-color: rgba(245, 245, 220, 0.3);
     box-shadow: 5px 10px 8px #888888;
+    text-align: center;
+}
+
+#example .notes h3{
+    font-weight: bold;
+}
+
+#example .notes h4{
+    /* text-decoration: italic; */
 }
 
 #notesHeader{
+    font-size: 45px;
     font-weight: bold;
+    margin: 26px;
 }
+
+#addPopUp{
+    border: 3px solid blue;
+    padding: 45px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+.popUpDiv{
+    padding: 20px;    
+}
+
 
 
 /* specificDay.html */
