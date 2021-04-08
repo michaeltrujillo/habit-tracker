@@ -17,7 +17,7 @@ const HabitAPI = {
   getUserHabits: function () {
     return axios.get("/api/user/userHabits");
   },
-  deleteHabit: function (id) {
+  deleteHabitItem: function (id) {
     return axios.delete("/api/habit/habits/" + id);
   },
   createHabit: function (habit) {
