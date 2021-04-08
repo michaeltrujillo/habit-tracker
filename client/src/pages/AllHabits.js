@@ -24,6 +24,7 @@ function AllHabits() {
         <div>
             <CurrentHabits
                 habits = {habits}
+                loadHabits = {() => loadHabits()}
             ></CurrentHabits>
             <br/><br/>
             <CompletedHabits

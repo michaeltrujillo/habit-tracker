@@ -22,13 +22,11 @@ export default ({ children }) => {
   return (
     <div>
       {!isLoaded ? (
-        <div
-          style={{
-            height: "100vh",
-            backgroundImage:
-              "url(" + process.env.PUBLIC_URL + "/loadingBG.jpg" + ")",
-          }}
-        ></div>
+        <div className="d-flex justify-content-center">
+          <div className="spinner-border m-7" role="status">
+            <span className="visually-hidden"></span>
+          </div>
+        </div>
       ) : (
         <AuthContext.Provider
           value={{
