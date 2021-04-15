@@ -7,7 +7,7 @@ function HabitInfo(props) {
     let endDate = new Date(props.habit.endDate).toDateString();
 
     return (
-        <div className="container-fluid" id="example" style={{textAlign: "center"}}>
+        <div id="example" style={{textAlign: "center"}}>
 
             <h1>{props.habit.name}</h1>
             <button type="button" className="btn btn-secondary">Update Habit</button>

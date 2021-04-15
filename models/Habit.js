@@ -29,7 +29,8 @@ const HabitSchema = new mongoose.Schema({
     dateCreated: {
         type: Date,
         default: Date.now
-    }
+    },
+    notes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Notes" }]
 });
 
 module.exports = mongoose.model("Habit", HabitSchema);
